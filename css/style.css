@@ -1,0 +1,458 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../font/SourceSansPro-SemiBold.woff2') format('woff2'),
+        url('../font/SourceSansPro-SemiBold.woff') format('woff'),
+        url('../font/SourceSansPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../font/SourceSansPro-Light.woff2') format('woff2'),
+        url('../font/SourceSansPro-Light.woff') format('woff'),
+        url('../font/SourceSansPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../font/SourceSansPro-Bold.woff2') format('woff2'),
+        url('../font/SourceSansPro-Bold.woff') format('woff'),
+        url('../font/SourceSansPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../font/SourceSansPro-Regular.woff2') format('woff2'),
+        url('../font/SourceSansPro-Regular.woff') format('woff'),
+        url('../font/SourceSansPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../font/SourceSansPro-Black.woff2') format('woff2'),
+        url('../font/SourceSansPro-Black.woff') format('woff'),
+        url('../font/SourceSansPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    font-family: "Source Sans Pro";
+}
+.mt-100{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.form-control:focus{
+    border:none;
+    box-shadow:none
+}
+.form-bg-img{
+    overflow-y: hidden;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.452);
+    z-index: 1032;
+}
+.blur-bg{
+    width: 500px;
+    height: auto;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top:10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1050;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #333;
+}
+.form-logo img{
+    max-width: 200px;
+    height: auto;
+}
+.blur-bg input{
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+.blur-bg input:focus{
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+.form-control::placeholder{
+    color:rgb(131, 131, 131);
+}
+.add-account .btn{
+    width: 150px;
+    height:auto;
+    color: #fff;
+}
+.btn-sign{
+    background-color: #0479FF;
+    color: #fff;
+}
+.btn-sign:hover{
+    background-color: #0263d3;
+    color: #fff;
+}
+.btn-fb{
+    background: #395899;
+}
+.btn-fb:hover{
+    background: #2c457a;
+}
+.btn-go{
+    background: #FA5535;
+}
+.btn-go:hover{
+    background: #dd4b2e;
+}
+.cross{
+    font-size: 30px;
+    cursor: pointer;
+}
+.cross:hover{
+    color: rgb(223, 221, 221);
+}
+
+.nav-bg{
+    background-color:#000;
+    transition: all .5s ease;
+}
+.book-now{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #0263d3;
+    outline: none;
+}
+.book-now:hover{
+    color: #fff;
+    background-color: #0263d3;
+    border: 1px solid #0263d3;
+}
+.banner-head{
+    font-size: 50px;
+    text-shadow: 0px 2px 5px #000;
+}
+.banner {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+    height: 100%;
+    animation: zooming 4s infinite
+}
+@keyframes zooming{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.title{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+}
+
+.sub-head{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.detail{
+    color: #0263d3;
+    font-size: 20px;
+    font-weight: 600;
+}
+.boxshadow{
+    box-shadow: 0px 0px 8px rgb(156, 156, 156,.3);
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+}
+.enter .boxshadow{
+    width: 100%;
+} 
+
+ .about-img{
+    max-width: 100%;
+    height: auto;
+}
+.about-details p{
+    line-height: 30px;
+}
+.nav-back{
+    background: #fff;
+    transition: all .5s ease;
+    box-shadow: 0px 0px 10px #ccc;
+    color: #000;
+}
+.nav-link{
+    color: rgb(46, 46, 46);
+}
+.nav-link:hover{
+   background-color: #0263d3;
+   color: #fff;
+}
+.add-active{
+    background-color: #0263d3;
+   color: #fff;
+   border-radius: 5px;
+}
+.fa-star{
+    color: #FFDD00;
+}
+.service-icon{
+    font-size: 60px;
+    border: 2px solid #ccc;
+    color: #0263d3;
+}
+.review{
+    background: rgb(209, 209, 209);
+}
+.fig-detail{
+    font-size: 30px;
+    background-color: rgba(83, 83, 83, 0.685);
+    position: absolute;
+    top: 0;
+    width: 90%;
+}
+.head-text::after{
+    content: '';
+    display: block;
+    width: 40%;
+    height: 3px;
+    background-color: #0263d3;
+    margin: 3px auto;
+}
+.scale{
+    overflow: hidden;
+    cursor: pointer;
+}
+.hover-sc:hover{
+    transform: scale(1.10);
+    transition: all .3s ease;
+
+}
+.hotel-img{
+   position: relative;
+   overflow: hidden;
+    cursor: pointer;
+   transition: all .4s ease;
+}
+.search-me {
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    background-color: rgba(77, 77, 77, 0.705);
+    
+    width: 100%;
+    height:calc(100% - 38px);
+    cursor: pointer;
+    padding: 15px;
+    transition: all .4s ease-in;
+    
+}
+.hotel-img:hover .search-me{
+    left: 0;
+}
+.service-icon{
+    background-color: #0263d3;
+    color: #fff;
+    animation: change-back 3s ease infinite;
+}
+@keyframes change-back{
+    20%{
+        background-color: #fff;
+        color: #0263d3; 
+    }
+    100%{
+        background-color: #0263d3;
+        color: #fff;
+        transition: all 2s ease;
+    }
+ 
+}
+
+.event{
+    width: 100%;
+}
+.event-img{
+    width: 100%;
+}
+.shadow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dash{
+    background: #0263d3;
+    box-shadow: 0px 0px 15px rgb(112, 112, 112);
+    border-radius: 5px;
+    text-shadow: 0px 0px 5px #000;
+}
+.nav-footer:hover{
+    color: #0479FF !important;
+    background-color: transparent !important;
+}
+.carousel-indicators li{
+    width: 10px ;
+    height: 10px;
+    border-radius: 50%;
+}
+#signup,#login{
+    display: none;
+    z-index: 999;
+}
+.contact-btn{
+    background-color: #0263d3;
+    width: 50px ;
+    height: 50px;
+    border-radius: 50% 50% 0 50%;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    cursor: pointer;
+    box-shadow: 0px 3px 8px #0263d3ad;
+}
+.contact-btn i{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    
+}
+.contact-btn:hover{
+    background-color: #fff;
+    transition: all .5s ease;
+}
+.contact-btn:hover i{
+    color: #0263d3;
+    transition: all .5s ease;
+}
+#contact{
+
+    width: 100%;
+    height: auto;
+    
+}
+button:focus{
+    outline: none;
+}
+.chat{
+    display: none;
+    background-color: #0263d3;
+    max-width: 300px;
+    border-radius: 10px;
+    position: fixed;
+    right: 0;
+    bottom: 10%;
+    box-shadow: 0px 0px 5px rgb(44, 44, 44);
+    transition: .5s ease;
+}
+
+.address-info .addess p{
+    font-size: 20px
+}
+.scale-out{
+    opacity: 0;
+    transition: opacity .9s ease;
+    -webkit-transition: opacity .9s ease;
+}
+.fade-content{
+    -webkit-animation:animatezoom 1s ease;
+    animation:animatezoom 1s ease ;
+    opacity: 1;
+}
+@-webkit-keyframes animatezoom{
+    from{-webkit-transform:scale(0)} 
+    to{-webkit-transform:scale(1)}}
+
+	@keyframes animatezoom{
+        from{-webkit-transform:scale(0)} 
+        to{-webkit-transform:scale(1)}
+    }
+
+@media screen and (max-width : 992px){
+    .banner-head{
+        font-size: 35px;
+    }
+    .sub-head{
+        font-size: 25px;
+    }
+    .boxshadow{
+        margin-bottom: 15px;
+    }
+    .event{
+        margin-bottom: 15px;
+    }
+    .service-info{
+        margin-bottom: 25px;
+    }
+    .footer-info{
+        margin-bottom: 25px;
+    }
+    .address-info{
+        margin-top: 20px;
+    }
+    .navbar-nav .nav-link{
+        padding-left: 15px;
+    }
+}
+@media screen and (max-width : 768px){
+  
+    .banner-head{
+        font-size: 30px;
+    }
+    .sub-head{
+        font-size: 20px;
+    }
+    .about-details{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width : 575px){
+    .nav-logo{
+        width: 75px!important;
+    }
+    .banner {
+        width: 200%!important;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+    .banner-head{
+        font-size: 25px;
+    }
+    .sub-head{
+        font-size: 18px;
+    }
+    .about-details h2{
+        font-size: 24px;
+    }
+}
